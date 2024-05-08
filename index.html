@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizzApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="start-btn"><button>Start Quiz</button></div>
+
+    <div class="rules">
+        <div class="rules-title"><span>Guidelines for this Quiz</span></div>
+        <div class="rule-list">
+            <div class="rule">1. Each question allows <span>15 seconds</span> for answering.</div>
+            <div class="rule">2. Once an answer is chosen, it cannot be changed.</div>
+            <div class="rule">3. Answers cannot be selected once time expires.</div>
+            <div class="rule">4. Exiting the Quiz during play is not permitted.</div>
+            <div class="rule">5. Points are awarded for correct answers.</div>
+        </div>
+    </div>    
+        <div class="buttons">
+            <button class="exit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz-box">
+        <header>
+            <div class="title">Quizz App</div>
+            <div class="timer">
+                <div class="time-left-text">Time Left</div>
+                <div class="timer-sec">15</div>
+            </div>
+            <div class="time-line"></div>
+        </header>
+        <section>
+            <div class="question-text">
+            </div>
+            <div class="option-list">
+            </div>
+        </section>
+
+        <footer>
+            <div class="total">
+            </div>
+            <button class="next-btn">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="result">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete">You've completed the Quiz!</div>
+        <div class="score">
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="exit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
