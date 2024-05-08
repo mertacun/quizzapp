@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,11 +10,6 @@
 body{
     background-image: url('img/background.jpg');
     background-size: cover;
-}
-
-::selection{
-    color: #fff;
-    background: #F0C32D;
 }
 
 .start-btn,
@@ -40,12 +36,12 @@ body{
 .start-btn button{
     font-size: 25px;
     font-weight: 500;
-    color: #F0C32D;
+    color: #151515;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 5px;
-    background: #fff;
+    background: #F0C32D;
     cursor: pointer;
 }
 
@@ -136,9 +132,9 @@ body{
 }
 
 .quiz-box header .timer{
-    color: #F0C32D;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    color: #151515;
+    background: #F0C32D;
+    border: 1px solid #AAAAA9;
     height: 45px;
     padding: 0 8px;
     border-radius: 5px;
@@ -163,8 +159,8 @@ body{
     border-radius: 5px;
     line-height: 30px;
     text-align: center;
-    background: #343a40;
-    border: 1px solid #343a40;
+    background: #AAAAA9;
+    border: 1px solid #151515;
     user-select: none;
 }
 
@@ -192,8 +188,8 @@ section .option-list{
 }
 
 section .option-list .option{
-    background: aliceblue;
-    border: 1px solid #f2da8a;
+    background: #ffecac;
+    border: 1px solid #F0C32D;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 17px;
@@ -210,21 +206,21 @@ section .option-list .option:last-child{
 }
 
 section .option-list .option:hover{
-    color: #F0C32D;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
+    color: #151515;
+    background: #F0C32D;
+    border: 1px solid #AAAAA9;
 }
 
 section .option-list .option.correct{
-    color: #155724;
-    background: #d4edda;
-    border: 1px solid #c3e6cb;
+    color: #003100;
+    background: #97f697;
+    border: 1px solid green;
 }
 
 section .option-list .option.incorrect{
     color: #721c24;
-    background: #f8d7da;
-    border: 1px solid #f5c6cb;
+    background: #fecace;
+    border: 1px solid red;
 }
 
 section .option-list .option.disabled{
@@ -285,10 +281,10 @@ footer button{
     cursor: pointer;
     border: none;
     outline: none;
-    color: #fff;
+    color: #151515;
     border-radius: 5px;
     background: #F0C32D;
-    border: 1px solid #F0C32D;
+    border: 1px solid #AAAAA9;
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
@@ -297,7 +293,7 @@ footer button{
 }
 
 footer button:hover{
-    background: #F0C32D;
+    background: #fde38f;
 }
 
 footer button.show{
@@ -359,25 +355,77 @@ footer button.show{
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 1px solid #F0C32D;
+    border: 1px solid #AAAAA9;
     transition: all 0.3s ease;
 }
 
 .buttons button.restart{
-    color: #F0C32D;
-    background: #151515;
+    color: #fff;
+    background: green;
 }
 
 .buttons button.restart:hover{
     background: #F0C32D;
+    color: #151515;
 }
 
-.buttons button.quit{
-    color: #F0C32D;
-    background: #151515;
+.buttons button.exit{
+    color: #fff;
+    background: red;
 }
 
-.buttons button.quit:hover{
+.buttons button.exit:hover{
     color: #151515;
     background: #F0C32D;
+}
+
+
+
+
+
+@media (max-width: 477px) {
+    .rules,
+    .quiz-box,
+    .result {
+        width: 80%;
+        margin: 0 auto; 
+    }
+    .rules .rule-list .rule {
+        font-size: 15px;
+    }
+    .quiz-box header .title {
+        font-size: 16px;
+    }
+    .quiz-box header .timer {
+        height: 40px;
+    }
+
+    .quiz-box header .timer .timer-sec {
+        font-size: 16px;
+        height: 27px;
+        width: 40px;
+        line-height: 28px;
+    }
+    .quiz-box header .timer {
+        width: 130px;
+    }
+    .quiz-box header .timer .time-left-text {
+        font-size: 15px;
+    }
+    .result .score span {
+        font-size: 15px;
+    }
+    .result .buttons button {
+        padding: 0 10px;
+    }
+    section .question-text {
+        font-size: 20px;
+    }
+    footer button {
+        height: 37px;
+        padding: 0 9px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
 }
